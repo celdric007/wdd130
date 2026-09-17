@@ -5,6 +5,12 @@
     --text-center: center;
 }
 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 nav {
     background-color: var(--background-color);
     padding: 10px;
@@ -40,6 +46,12 @@ aside {
     background-color: #eee;
     color: #333;
     text-align: var(--text-center);
+    position: relative;
+}
+aside h2 {
+  position: absolute;
+  top: 47px;
+  left: 150px;
 }
 
 aside img {
@@ -53,6 +65,7 @@ main img {
     border: var(--border);
     padding: 2px;
     box-shadow: var(--box-shadow);
+    float: right;
 }
 
 p {
@@ -63,4 +76,12 @@ footer {
     margin-top: 15px;
     border-top: var(--border);
     text-align: var(--text-center);
+}
+
+/* CSS HEADER STYLE */
+.box{
+    padding: 1rem;
+    margin: 1rem;
+    color: #060;
+    border: 1px solid rgb(0 0 0 / 10%);
 }
