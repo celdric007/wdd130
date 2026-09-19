@@ -63,9 +63,8 @@ h2{
 .hero article{
     position: absolute;
     bottom: 15px;
-    color: #fff;
-    background-color: var(--accent1-color);
-    opacity: 0.8;
+    color: #000;
+    background-color: var(--accent2-color);
 }
 .hero article img{
     float: right;
