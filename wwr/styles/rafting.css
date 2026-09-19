@@ -49,6 +49,7 @@ article {
 
 .hero {
     position: relative;
+    overlay: var(--secondary-color);
 }
 
 .hero img {
