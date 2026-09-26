@@ -1,4 +1,4 @@
-:root{
+:root {
     --background-color: darkblue;
     --border: 1px solid black;
     --box-shadow: 0 0 30px gray;
@@ -6,24 +6,32 @@
 }
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 nav {
-    background-color: var(--background-color);
-    padding: 10px;
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 h1 {
-    color: var(--background-color);
+    color: steelblue;
 }
 
 img {
@@ -36,6 +44,8 @@ img {
 
 main {
     max-width: 840px;
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 aside {
@@ -47,11 +57,15 @@ aside {
     color: #333;
     text-align: var(--text-center);
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: block;
 }
+
 aside h2 {
-  position: absolute;
-  top: 47px;
-  left: 150px;
+    position: absolute;
+    top: 47px;
+    left: 150px;
 }
 
 aside img {
@@ -72,6 +86,12 @@ p {
     padding: 0;
 }
 
+header,
+footer, .grid {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 footer {
     margin-top: 15px;
     border-top: var(--border);
@@ -79,9 +99,13 @@ footer {
 }
 
 /* CSS HEADER STYLE */
-.box{
+.box {
     padding: 1rem;
     margin: 1rem;
     color: #060;
     border: 1px solid rgb(0 0 0 / 10%);
+}
+.grid {
+  display: grid;
+  align-items: center;
 }
