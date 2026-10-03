@@ -36,7 +36,7 @@
             <div class="map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31771.057518137342!2d5.756963809570292!3d5.510148861201158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1791058885663!5m2!1sen!2sng"
-                    width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="400" height="350" allowfullscreen="" loading="lazy"
                     referrerpolicy="strict-origin-when-cross-origin"></iframe>
             </div>
             <div class="fill-form">
@@ -57,13 +57,16 @@
                         </div>
                         <div class="two">
                             <div class="form-all">
-                                <input type="radio" checked><label for="inquiry">General Inquiry</label>
+                                <input type="radio" id="inquiry" name="purpose" checked><label for="inquiry">General
+                                    Inquiry</label>
                             </div>
                             <div class="form-all">
-                                <input type="radio" checked><label for="reservation">Reservation Question</label>
+                                <input type="radio" id="reservation" name="purpose" checked><label
+                                    for="reservation">Reservation Question</label>
                             </div>
                             <div class="form-all">
-                                <input type="radio" checked><label for="website">Website Suggestion</label>
+                                <input type="radio" id="website" name="purpose" checked><label for="website">Website
+                                    Suggestion</label>
                             </div>
                         </div>
                     </div>
@@ -72,7 +75,7 @@
                     </div>
                     <textarea name="message-area" id="message-area"></textarea>
                     <div class="form-all">
-                        <input type="checkbox" checked>
+                        <input type="checkbox" id="newsletter" checked name="newsletter">
                         <label for="subscribe">Please Subscribe me to monthly newsletter</label>
                     </div>
                     <button type="submit">Get in touch</button>
