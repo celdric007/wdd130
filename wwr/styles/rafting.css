@@ -244,3 +244,344 @@ textarea {
 .heading {
     grid-column: 1/4;
 }
+.hero-view a {
+    color: #fff;
+}
+.hero-view img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-view {
+    position: relative;
+}
+
+.hero-view h1 {
+    position: absolute;
+    top: 140px;
+    color: #fff;
+    left: 30%;
+}
+
+.hero-view h2 {
+    position: absolute;
+    top: 180px;
+    color: #fff;
+    left: 25%;
+    font-size: 1.3rem;
+}
+
+.hero-view h3 {
+    position: absolute;
+    top: 210px;
+    color: #fff;
+    left: 32%;
+    font-size: 1.3rem;
+}
+
+.hero-view button {
+    position: absolute;
+    top: 240px;
+    left: 43%;
+    color: #000;
+    width: 100px;
+    height: 40px;
+    background-color: var(--secondary-color);
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+}
+
+.form-signup button {
+    margin: 1rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+.form-signup button:hover {
+    background-color: darkgreen;
+}
+
+.form-signup form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: 0.5rem;
+    display: grid;
+}
+
+.form-signup fieldset {
+    display: grid;
+    gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+}
+
+.form-signup legend {
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.3em;
+}
+
+.form-signup label,
+.form-signup input,
+.form-signup button,
+.form-signup textarea {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-signup label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+.card-content p {
+    color: #4a5568;
+    margin-bottom: 1.5rem;
+}
+
+/* --- CSS GRID LAYOUT --- */
+.grid-container {
+    display: grid;
+    /* Creates a 3-column layout on wide screens, automatically shrinking on smaller ones */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Make the Site Purpose card span all 3 columns wide */
+.purpose-card {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+}
+
+/* Image styling */
+.card-image {
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    object-fit: cover;
+}
+
+/* Content block inside cards */
+.card-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-content h2 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+.card-content h3 {
+    color: var(--secondary);
+    margin-bottom: 0.75rem;
+    font-size: 1.4rem;
+}
+/* --- Multi-Column Grid for Detailed Trip Descriptions --- */
+.detailed-trips {
+    margin-bottom: 4rem;
+}
+
+.detailed-trips h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #0d3b66;
+    margin-bottom: 2rem;
+}
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.trip-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.trip-card:hover {
+    transform: translateY(-5px);
+}
+
+.trip-image-wrapper {
+    position: relative;
+    height: 220px;
+}
+
+.trip-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trip-badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+.badge-popular { background-color: #2a9d8f; }
+.badge-extreme { background-color: #e63946; }
+.badge-scenic { background-color: #457b9d; }
+
+.trip-card-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.trip-card-content h3 {
+    color: #0d3b66;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.trip-tagline {
+    font-style: italic;
+    color: #666666;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+/* --- Comparison Data Table Structure --- */
+.trip-comparison h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #0d3b66;
+    margin-bottom: 0.5rem;
+}
+
+.section-lead {
+    text-align: center;
+    color: #666666;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.trips-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    min-width: 600px;
+}
+
+.trips-table th {
+    background-color: #0d3b66;
+    color: #ffffff;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+.trips-table td {
+    padding: 1.2rem 1rem;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.table-row-alt {
+    background-color: #fcfdfe;
+}
+
+.trip-title-cell {
+    font-weight: 600;
+    color: #0d3b66;
+}
+
+.price-cell {
+    font-weight: 700;
+    color: #ee964b;
+    font-size: 1.1rem;
+}
+
+.difficulty {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+/* --- Core Layout & Container --- */
+.trips-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* --- Hero Call To Action Banner --- */
+.trips-hero {
+    background: linear-gradient(rgba(13, 59, 102, 0.85), rgba(13, 59, 102, 0.85));
+    color: #ffffff;
+    text-align: center;
+    padding: 4rem 2rem;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+}
+.trips-hero a{
+    color: #fff;
+}
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    color: #e0e0e0;
+}
+
+.class-1 { background-color: #e8f5e9; color: #2e7d32; }
+.class-3 { background-color: #fff8e1; color: #f57f17; }
+.class-5 { background-color: #ffebee; color: #c62828; }

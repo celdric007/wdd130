@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/wdd130/wwr/styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="/wdd130/wwr/images/z-raftingcompas.jpg" alt="">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="trips-container">
+        <!-- Hero Call to Action Section -->
+        <section class="trips-hero">
+            <div class="hero-content">
+                <h1>Ready for an Unforgettable Adventure?</h1>
+                <p>From family-friendly floats to adrenaline-pumping Class V rapids, we have the perfect river experience waiting for you. Spaces fill up quickly for the peak summer season!</p>
+                <a href="contact.html" class="cta-button">Book Your Adventure Now</a>
+            </div>
+        </section>
+
+        <!-- Detailed Trip Descriptions Side-by-Side/Grid Layout -->
+        <section class="detailed-trips">
+            <h2>Our Featured River Rafting Trips</h2>
+            <div class="trip-grid">
+                
+                <!-- Trip 1 -->
+                <article class="trip-card">
+                    <div class="trip-image-wrapper">
+                        <img src="/wdd130/wwr/images/south-fork-american.webp" alt="Rafting down Salmon River rapids" class="trip-img">
+                        <span class="trip-badge badge-popular">Most Popular</span>
+                    </div>
+                    <div class="trip-card-content">
+                        <h3>South Fork American River</h3>
+                        <p class="trip-tagline">Perfect for families and first-timers seeking true whitewater thrills.</p>
+                        <p>Plunge into the heart of the canyon on this action-packed single-day journey. You will navigate rolling Class III rapids, marvel at towering granite cliffs, and stop mid-day for a gourmet riverside deli lunch prepared fresh by your guide. Keep your eyes peeled for bald eagles and bighorn sheep along the shoreline.</p>
+                    </div>
+                </article>
+
+                <!-- Trip 2 -->
+                <article class="trip-card">
+                    <div class="trip-image-wrapper">
+                        <img src="/wdd130/wwr/images/tuolumne.webp" alt="Adrenaline rapid splashing over a raft" class="trip-img">
+                        <span class="trip-badge badge-extreme">Extreme Adrenaline</span>
+                    </div>
+                    <div class="trip-card-content">
+                        <h3>Tuolumne River</h3>
+                        <p class="trip-tagline">An intense challenge designed exclusively for experienced paddlers.</p>
+                        <p>Brace yourself for continuous, technical Class IV and V rapids that demand teamwork and precise execution. This high-octane expedition drops through narrow volcanic gorges featuring massive waves, tight drops, and heart-pounding vertical plunges. Wet suits, helmets, and a brief safety certification interview are required before departure.</p>
+                    </div>
+                </article>
+
+                <!-- Trip 3 -->
+                <article class="trip-card">
+                    <div class="trip-image-wrapper">
+                        <img src="/wdd130/wwr/images/middle-fork-american.webp" alt="Calm river canyon floating at sunset" class="trip-img">
+                        <span class="trip-badge badge-scenic">Scenic & Relaxing</span>
+                    </div>
+                    <div class="trip-card-content">
+                        <h3>Middle Fork American River</h3>
+                        <p class="trip-tagline">A peaceful escape away from the chaos of everyday life.</p>
+                        <p>If you prefer sweeping mountain vistas over soaking-wet drops, this gentle drift is custom-made for you. Meander down crystal-clear waters winding through lush alpine meadows. This package includes a relaxing swim stop in natural hot springs and plenty of time for photography, making it an excellent choice for children and seniors alike.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Structured Trip Comparison Table -->
+        <section class="trip-comparison">
+            <h2>Compare All Available Packages</h2>
+            <p class="section-lead">Review our comprehensive roster of trips to find the exact duration, price point, and difficulty level that fits your group goals.</p>
+            
+            <div class="table-responsive">
+                <table class="trips-table">
+                    <thead>
+                        <tr>
+                            <th>Trip Name</th>
+                            <th>Difficulty</th>
+                            <th>Duration</th>
+                            <th>Age Minimum</th>
+                            <th>Price (Per Guest)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="trip-title-cell">The Salmon River Surge</td>
+                            <td><span class="difficulty class-3">Class III (Moderate)</span></td>
+                            <td>Full Day (6 hours)</td>
+                            <td>8 Years</td>
+                            <td class="price-cell">$125</td>
+                        </tr>
+                        <tr class="table-row-alt">
+                            <td class="trip-title-cell">Canyon Thunder Expedition</td>
+                            <td><span class="difficulty class-5">Class IV-V (Advanced)</span></td>
+                            <td>Full Day (7 hours)</td>
+                            <td>16 Years</td>
+                            <td class="price-cell">$185</td>
+                        </tr>
+                        <tr>
+                            <td class="trip-title-cell">Whispering Wilderness Float</td>
+                            <td><span class="difficulty class-1">Class I-II (Easy)</span></td>
+                            <td>Half Day (3 hours)</td>
+                            <td>5 Years</td>
+                            <td class="price-cell">$85</td>
+                        </tr>
+                        <tr class="table-row-alt">
+                            <td class="trip-title-cell">The Weekender Wilderness Camp</td>
+                            <td><span class="difficulty class-3">Class II-III (Moderate)</span></td>
+                            <td>2 Days, 1 Night</td>
+                            <td>10 Years</td>
+                            <td class="price-cell">$340</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©2026 | WhiteWater Rafting Company | Ijomoni Celdric Yole</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com"><img src="/wdd130/wwr/images/facebook_15713427.png" alt="Facebook Icon"></a>
+            <a href="https://instagram.com"><img src="/wdd130/wwr/images/instagram_2626270.png"
+                    alt="Instagram Icon"></a>
+            <a href="https://twitter.com"><img src="/wdd130/wwr/images/social-media_14417460.png"
+                    alt="Twitter Icon"></a>
+        </nav>
+    </footer>
+</body>
+</html>
